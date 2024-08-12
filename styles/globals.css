@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+
+.custom-screen {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.gradient-border {
+    border: 1px solid transparent;
+    background: linear-gradient(white, white), linear-gradient(25deg, rgba(209, 213, 219, 1), rgba(209, 213, 219, 1), rgba(0, 0, 0, 0.63), rgba(209, 213, 219, 1), rgba(209, 213, 219, 1));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.body {
+    font-family: 'GT America Trial', sans-serif;
+    background:#F5F1EB url('/background.png');
+    /* background-position: center; ¥
+    background-repeat: no-repeat;
+    background-size: cover; */
+  
+    /* Stack the color and image */
+    background-blend-mode: multiply;
+    color: #332b29;
+}
+
+.text__color--main {
+    color: #332b29;
+}
