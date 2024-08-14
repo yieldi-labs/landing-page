@@ -1,12 +1,13 @@
 import NavLink from "../NavLink"
 import Image from "next/image"
+import styles from "../../../styles/home.module.css"
 
 const Hero = () => (
     <section>
         <div className="text-gray-600 mt-28 flex flex-col">
             <div className="text-center">
-                <div className="mx-auto sm:text-6xl text-center text__color--main text-8xl font-bold">
-                    The yield layer for shared security.
+                <div className={styles.title + ' mx-auto'}>
+                    The yield layer for shared <span>security.</span>
                 </div>
                 <div className="flex mt-20 z-0">
                     <Image src="/Construction.svg" width={500} height={665} alt="construction" className="ml-[-158px]" />

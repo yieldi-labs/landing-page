@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Brand from '../Brand'
 import NavLink from '../NavLink'
+import styles from '../../../styles/navbar.module.css'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -75,25 +76,20 @@ const Navbar = () => {
                     </div>
                     <div className={`flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:flex ${state ? "" : "hidden"} justify-between align-middle`}>
                         <ul className='text-gray-700 space-y-6 md:flex md:space-x-8 md:ml-5 md:space-y-0 md:text-gray-600 md:font-medium'>
-                            {
-                                navigation.map((item, idx) => {
-                                    return (
-                                        <li key={idx} className="text__color--main duration-150 hover:text-gray-900 h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] justify-center items-center gap-2.5 inline-flex">
-                                            <Link
-                                                href={item.path}
-                                                className="block"
-                                            >
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    )
-                                })
-                            }
+                            {navigation.map((item, idx) => {
+                                return (
+                                    <li key={idx} className={styles.btn + ' duration-150 hover:text-gray-900 h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] justify-center items-center gap-2.5 inline-flex'}>
+                                        <Link href={item.path} className="block">
+                                            {item.title}
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
                         <div className='flex'>
                             <NavLink
                                 href="/get-started"
-                                className="font-medium text-sm text-white hover:bg-gray-600 active:bg-gray-900 md:inline w-[159px] h-10 px-5 py-2.5 bg-[#332b29] rounded-[40px] justify-center items-center gap-2.5 inline-flex"
+                                className={styles.btn + ' ' + styles.btnLaunch + ' font-medium text-sm text-white hover:bg-gray-600 active:bg-gray-900 md:inline w-[159px] h-10 px-5 py-2.5 bg-[#332b29] rounded-[40px] justify-center items-center gap-2.5 inline-flex'}
                             >
                                 Launch App
                             </NavLink>

@@ -1,0 +1,14 @@
+.btn {
+    color: var(--Raisin-Black, #332B29);
+    text-align: center;
+    font-family: "GT America Trial";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btnLaunch {
+    color: var(--Isabelline, #F5F1EB);
+}

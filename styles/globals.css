@@ -3,21 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'GTAmerica';
+  font-family: 'GT America Trial';
   src: url('/fonts/GT-America-Standard-Bold-Trial.otf') format('opentype');
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'GTAmerica';
+  font-family: 'GT America Trial';
+  src: url('/fonts/GT-America-Standard-Medium-Trial.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GT America Trial';
   src: url('/fonts/GT-America-Standard-Regular-Trial.otf') format('opentype');
   font-style: normal;
   font-weight: normal;
 }
 
 body {
-    font-family: 'GTAmerica', sans-serif;
+    font-family: 'GT America Trial', sans-serif;
 }
 
 .custom-screen {
