@@ -53,8 +53,9 @@ const Navbar = () => {
     return (
         <header className='fixed top-0 w-full z-40'>
             <nav className={`w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""} ${scrolled ? 'bg-[#F5F1EB]' : ''}`}>
-                <div className="custom-screen items-center mx-auto md:flex">
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                <div className="custom-screen items-center mx-auto py-3 md:py-5 md:flex flex justify-center">
+                    <div className="custom-screen items-center mx-auto md:flex flex justify-center">
+                    {/* <div className="flex items-center justify-between py-3 md:py-5 md:block"> */}
                         <Brand />
                         <div className="md:hidden">
                             <button role="button" aria-label="Open the menu" className="text-gray-500 hover:text-gray-800"

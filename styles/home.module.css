@@ -12,3 +12,20 @@
 .title span {
     background: var(--Green-Yellow, #A1FD59);
 }
+
+.restakeBtn {
+    display: flex;
+    width: 241px;
+    height: 58px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--Raisin-Black, #332B29);   
+    color: var(--Brand-2-White, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
