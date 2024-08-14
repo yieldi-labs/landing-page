@@ -1,7 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/fonts/GT-America-Standard-Bold-Trial.otf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/fonts/GT-America-Standard-Regular-Trial.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+    font-family: 'GTAmerica', sans-serif;
+}
 
 .custom-screen {
     @apply max-w-screen-xl mx-auto px-4 md:px-8;
@@ -15,7 +32,6 @@
 }
 
 .body {
-    font-family: 'GT America Trial', sans-serif;
     background:#F5F1EB url('/background.png');
     /* background-position: center; ¥
     background-repeat: no-repeat;
