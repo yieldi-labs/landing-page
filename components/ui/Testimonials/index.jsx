@@ -4,19 +4,24 @@ const Testimonials = () => {
 
     const components = [
         {
-            text: "AVS: Supports yield streaming via an Axelar-like General Message Parsing Gateway Contract."
+            subtitle: "AVS",
+            text: "Supports yield streaming via an Axelar-like General Message Parsing Gateway Contract."
         },
         {
-            text: "IBC Channel: Maintains connectivity to THORChain."
+            subtitle: "IBC Channel",
+            text: "Maintains connectivity to THORChain."
         },
         {
-            text: "Liquidity Auction: Conducts auctions with incentives to correctly price and build liquidity."
+            subtitle: "Liquidity Auction",
+            text: "Conducts auctions with incentives to correctly price and build liquidity."
         },
         {
-            text: "Yieldi Pools: Deploys AVS pools and processes inbound yield swaps to native ETH."
+            subtitle: "Yieldi Pools",
+            text: "Deploys AVS pools and processes inbound yield swaps to native ETH."
         },
         {
-            text: "THORChain: Supports Yield Accounts, allowing users to query balances, claim, and set auto-stream."
+            subtitle: "THORChain",
+            text: "Supports Yield Accounts, allowing users to query balances, claim, and set auto-stream."
         },
     ]
 
@@ -30,7 +35,7 @@ const Testimonials = () => {
                         {
                             components.map((component, index) => 
                                 <li key={`component-${index}`} className={`border-t border-[#003944] p-2.5 text-[#003944] text-xl font-medium ${index == components.length - 1 ? 'border-b' : ''}`}>
-                                    {component.text}
+                                    <strong>{component.subtitle}:</strong> {component.text}
                                 </li>)
                         }
                     </ul>

@@ -13,21 +13,27 @@ const Hero = () => (
                     The yield layer for shared <span className="bg-[#A1FD59]">security.</span>
                 </div>
                 <div className="flex mt-20 z-0 w-full flex-1">
-                    <Image src="/construction.png" width="470" height="478" alt="construction" />
+                    <Image src="/construction.svg" width="470" height="478" alt="construction" />
                     <div className="ml-7 flex flex-col mt-10 flex-1">
                         <div className="text__color--main text-[24px] text-left font-normal">
                             Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
                         </div>
                         <div className="mt-10 flex flex-col">
-                            <NavLink href="/get-started" className="flex w-[241px] h-[58px] p-[10px] justify-center 
+                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] p-[10px] justify-center 
                                 items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
-                                text-[16px] font-medium uppercase">
-                                RESTAKE NOW
+                                text-[16px] font-medium uppercase hover:text-[#F5F1EB] hover:bg-[#332b29c9]">
+                                join discord
                             </NavLink>
-                            <div className="flex justify-end gap-6 right-0 p-6 mr-7 pt-[72px]">
-                                <Image src={xIcon} alt="x" />
-                                <Image src={telegramIcon} alt="telegram" />
-                                <Image src={discordIcon} alt="discord" />
+                            <div className="flex justify-end right-0 p-6 mr-7 pt-[72px]">
+                                <NavLink href="https://x.com/yieldi_xyz" target="_blank "className="duration-150 hover:scale-110">
+                                    <Image src={xIcon} alt="x"/>
+                                </NavLink>
+                                <NavLink href="https://t.me/yieldi_labs" target="_blank" className="duration-150 hover:scale-110">
+                                    <Image src={telegramIcon} alt="telegram"/>
+                                </NavLink>
+                                <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="duration-150 hover:scale-110">
+                                    <Image src={discordIcon} alt="discord"/>
+                                </NavLink>
                             </div>
                         </div>
                         

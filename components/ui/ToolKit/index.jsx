@@ -63,7 +63,7 @@ const ToolKit = () => {
                             Because the yield is lower risk, and in an asset delivered to the user, removing friction, the cost of yield will be much lower. Thus AVS's will naturally prefer yield-streaming because it will require less inflation and they can transition to the fee regime faster, avoiding security gaps.
                         </span>
                     </div>
-                    <img src="/diagram.png" alt="diagram" />
+                    <img src="/diagram.svg" alt="diagram" />
                 </div>
             </div>
         </SectionWrapper>

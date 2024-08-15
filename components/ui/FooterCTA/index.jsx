@@ -9,20 +9,30 @@ import discordIcon from "../../../public/logos/discord.svg"
 
 const FooterCTA = () => (
     <SectionWrapper className="bg-[#F5F1EB]">
-        <div class="flex max-w-screen-2xl mx-auto p-[60px] flex-col items-center gap-[45px] rounded-[60px] border border-[#524B48]">
-            <h1 class="text-[#332B29] text-center font-bold text-[48px] leading-normal self-stretch">
-                The Yield Venue for Shared <span className="bg-[#A1FD59] p-3">Security</span>
-            </h1>
-            <div class="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch rounded-[100px] border border-[#6D655D] bg-[#F5F1EB]">
-                <h2 class="text-[#332B29] font-medium text-[20px] leading-none uppercase">
-                    restake now
-                </h2>
+        <div class="flex max-w-screen-2xl mx-auto px-[55px]">
+            <div className="flex flex-col items-center flex-1 p-[60px] gap-[45px] rounded-[60px] border border-[#524B48]">
+                <h1 class="text-[#332B29] text-center font-bold text-[48px] leading-normal self-stretch">
+                    The Yield Venue for Shared <span className="bg-[#A1FD59] p-3">Security</span>
+                </h1>
+                <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
+                    className="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch rounded-[100px] 
+                    font-medium text-[20px] leading-none uppercase border border-[#6D655D] bg-[#F5F1EB] mx-[55px] text-[#332B29] 
+                    duration-150 hover:text-gray-900">
+                        join discord
+                </NavLink>
+                <div className="flex justify-center">
+                    <NavLink href="https://x.com/yieldi_xyz" target="_blank" className="duration-150 hover:scale-110">
+                        <Image src={xIcon} alt="x"/>
+                    </NavLink>
+                    <NavLink href="https://t.me/yieldi_labs" target="_blank "className="duration-150 hover:scale-110">
+                        <Image src={telegramIcon} alt="telegram"/>
+                    </NavLink>
+                    <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank "className="duration-150 hover:scale-110">
+                        <Image src={discordIcon} alt="discord"/>
+                    </NavLink>
+                </div>
             </div>
-            <div className="flex justify-center gap-6">
-                <Image src={xIcon} alt="x" />
-                <Image src={telegramIcon} alt="telegram" />
-                <Image src={discordIcon} alt="discord" />
-            </div>
+            
         </div>
     </SectionWrapper>
 )
