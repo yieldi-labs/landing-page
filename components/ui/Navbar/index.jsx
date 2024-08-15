@@ -77,12 +77,10 @@ const Navbar = () => {
                         <ul className='text-gray-700 space-y-6 md:flex md:space-x-8 md:ml-5 md:space-y-0 md:text-gray-600 md:font-medium'>
                             {navigation.map((item, idx) => {
                                 return (
-                                    <li key={idx} className="duration-150 hover:text-gray-900 h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] 
+                                    <Link href={item.path} key={idx} className="block duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] 
                                         justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
-                                        <Link href={item.path} className="block">
-                                            {item.title}
-                                        </Link>
-                                    </li>
+                                        {item.title}
+                                    </Link>
                                 )
                             })}
                         </ul>
