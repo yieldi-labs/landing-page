@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Footer from "./ui/Footer"
 import Navbar from "./ui/Navbar"
 
 const Layout = ({ children }) => {
@@ -13,7 +12,6 @@ const Layout = ({ children }) => {
             </Head>
             <Navbar />
             <main>{children}</main>
-            <Footer />
         </>
     )
 }

@@ -1,6 +1,5 @@
 import NavLink from "../NavLink"
 import Image from "next/image"
-import styles from "../../../styles/home.module.css"
 import xIcon from "../../../public/logos/x.svg"
 import telegramIcon from "../../../public/logos/telegram.svg"
 import discordIcon from "../../../public/logos/discord.svg"
@@ -10,8 +9,8 @@ const Hero = () => (
     <section>
         <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto">
             <div className="text-center flex-col flex flex-1">
-                <div className={styles.title + ' mx-auto'}>
-                    The yield layer for shared <span>security.</span>
+                <div className="text-[#332B29] text-center font-bold text-[96px] leading-none max-w-[990px] mx-auto">
+                    The yield layer for shared <span className="bg-[#A1FD59]">security.</span>
                 </div>
                 <div className="flex mt-20 z-0 w-full flex-1">
                     <Image src="/construction.png" width="470" height="478" alt="construction" />
@@ -20,7 +19,9 @@ const Hero = () => (
                             Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
                         </div>
                         <div className="mt-10 flex flex-col">
-                            <NavLink href="/get-started" className={styles.restakeBtn}>
+                            <NavLink href="/get-started" className="flex w-[241px] h-[58px] p-[10px] justify-center 
+                                items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
+                                text-[16px] font-medium uppercase">
                                 RESTAKE NOW
                             </NavLink>
                             <div className="flex justify-end gap-6 right-0 p-6 mr-7 pt-[72px]">
