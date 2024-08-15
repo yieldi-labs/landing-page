@@ -40,9 +40,7 @@ body {
 
 .body {
     background:#F5F1EB url('/background.png');
-    /* background-position: center; ¥
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-repeat: repeat-x;
   
     /* Stack the color and image */
     background-blend-mode: multiply;
