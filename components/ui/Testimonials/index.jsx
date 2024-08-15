@@ -35,7 +35,7 @@ const Testimonials = () => {
                         }
                     </ul>
                 </div>
-                <div className="w-[1042px] mx-auto text-center text-[#332b29] text-[40px] font-bold py-20 px-24 leading-10">Join the future of yield streaming with Yieldi and experience efficient, secure, and innovative financial growth.</div>
+                <div className="w-[1042px] mx-auto text-center text-[#332b29] text-[40px] font-bold pt-20 px-24 leading-10">Join the future of yield streaming with Yieldi and experience efficient, secure, and innovative financial growth.</div>
             </div>
         </SectionWrapper>
     )
