@@ -19,9 +19,9 @@ const Hero = () => (
                             Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
                         </div>
                         <div className="mt-10 flex flex-col xl:items-start items-center">
-                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] p-[10px] justify-center 
-                                items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
-                                text-[16px] font-medium uppercase hover:text-[#F5F1EB] hover:bg-[#332b29c9]">
+                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] 
+                                p-[10px] justify-center items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
+                                text-[16px] font-medium uppercase hover:text-[#F5F1EB] hover:bg-[#332b29c9] hidden">
                                 join discord
                             </NavLink>
                             <div className="flex xl:justify-end justify-center right-0 p-6 xl:mr-7 xl:pt-[72px] pt-9">

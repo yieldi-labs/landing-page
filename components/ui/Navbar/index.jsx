@@ -84,7 +84,7 @@ const Navbar = () => {
                                 )
                             })}
                         </ul>
-                        <div className='flex'>
+                        <div className="flex hidden">
                             <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
                                 className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] active:bg-gray-900 h-10 w-[159px] px-5 py-2.5 rounded-[40px] 
                                     border  border-[#514a47] justify-center items-center gap-2.5 inline-flex bg-[#332b29] text-[#F5F1EB] 

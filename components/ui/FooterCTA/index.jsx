@@ -16,9 +16,8 @@ const FooterCTA = () => (
                 </h1>
                 <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
                     className="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch xl:rounded-[100px] 
-                    rounded-[40px]
-                    font-medium text-[20px] leading-none uppercase border border-[#6D655D] bg-[#F5F1EB] mx-[55px] text-[#332B29] 
-                    duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9]">
+                    rounded-[40px]font-medium text-[20px] leading-none uppercase border border-[#6D655D] bg-[#F5F1EB] 
+                    mx-[55px] text-[#332B29] duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] hidden">
                         join discord
                 </NavLink>
                 <div className="flex justify-center">
