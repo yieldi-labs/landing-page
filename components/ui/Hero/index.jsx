@@ -12,19 +12,19 @@ const Hero = () => (
                 <div className="text-[#332B29] text-center font-bold text-[76px] xl:text-[96px] leading-none max-w-[990px] mx-auto">
                     The yield layer for shared <span className="bg-[#A1FD59]">security.</span>
                 </div>
-                <div className="flex mt-20 z-0 w-full flex-1 flex-col xl:flex-row">
+                <div className="flex mt-20 z-0 w-full flex-1 flex-col md:flex-row md:items-stretch items-center">
                     <Image src="/construction.svg" width="470" height="478" alt="construction" />
-                    <div className="xl:ml-7 flex flex-col xl:mt-10 sm:px-2 flex-1 px-4 xl:px-0">
+                    <div className="xl:ml-7 flex flex-col xl:mt-10 sm:px-2 flex-1 px-4 xl:px-0 justify-between h-auto">
                         <div className="text__color--main text-[24px] text-left font-normal">
                             Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
                         </div>
-                        <div className="mt-10 flex flex-col xl:items-start items-center">
+                        <div className="mt-10 flex flex-col">
                             <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] 
                                 p-[10px] justify-center items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
                                 text-[16px] font-medium uppercase hover:text-[#F5F1EB] hover:bg-[#332b29c9] hidden">
                                 join discord
                             </NavLink>
-                            <div className="flex xl:justify-end justify-center right-0 p-6 xl:mr-7 xl:pt-[72px] pt-9">
+                            <div className="flex xl:justify-end justify-center right-0 xl:mr-7 xl:mb-[42px] mb-[24px]">
                                 <NavLink href="https://x.com/yieldi_xyz" target="_blank "className="duration-150 hover:scale-110">
                                     <Image src={xIcon} alt="x"/>
                                 </NavLink>
