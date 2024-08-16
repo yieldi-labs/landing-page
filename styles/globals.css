@@ -47,6 +47,12 @@ body {
     color: #332b29;
 }
 
+@media (max-width: 1260px) {
+    .body {
+        background-repeat: repeat;
+    }
+}
+
 .text__color--main {
     color: #332b29;
 }

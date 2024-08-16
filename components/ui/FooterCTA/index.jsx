@@ -8,16 +8,16 @@ import discordIcon from "../../../public/logos/discord.svg"
 
 
 const FooterCTA = () => (
-    <SectionWrapper className="bg-[#F5F1EB]">
-        <div class="flex max-w-screen-2xl mx-auto px-[55px]">
+    <SectionWrapper className="bg-[#F5F1EB] py-10">
+        <div class="flex max-w-screen-2xl mx-auto xl:px-[55px] px-8">
             <div className="flex flex-col items-center flex-1 p-[60px] gap-[45px] rounded-[60px] border border-[#524B48]">
                 <h1 class="text-[#332B29] text-center font-bold text-[48px] leading-normal self-stretch">
                     The Yield Venue for Shared <span className="bg-[#A1FD59] p-3">Security</span>
                 </h1>
                 <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
-                    className="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch rounded-[100px] 
-                    font-medium text-[20px] leading-none uppercase border border-[#6D655D] bg-[#F5F1EB] mx-[55px] text-[#332B29] 
-                    duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9]">
+                    className="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch xl:rounded-[100px] 
+                    rounded-[40px]font-medium text-[20px] leading-none uppercase border border-[#6D655D] bg-[#F5F1EB] 
+                    mx-[55px] text-[#332B29] duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] hidden">
                         join discord
                 </NavLink>
                 <div className="flex justify-center">
