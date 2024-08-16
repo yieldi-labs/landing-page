@@ -51,7 +51,7 @@ const Navbar = () => {
 
     return (
         <header className='fixed top-0 w-full z-40'>
-            <nav className={`w-full md:static md:text-sm flex ${state ? "fixed z-10 h-full" : ""} ${scrolled ? 'md:bg-[#F5F1EB] md:bg-transparent' : ''}`}>
+            <nav className={`w-full md:static md:text-sm flex ${state ? "fixed z-10 h-full" : ""} ${scrolled ? 'md:bg-[#F5F1EB] bg-transparent' : ''}`}>
                 <div className="md:custom-screen md:mx-auto gap-2 md:py-5 md:flex flex w-full md:w-auto items-end md:items-center flex-col md:flex-row lg:w-[990px]">
                     <div className={`custom-screen items-center mx-auto p-4 md:p-0 flex justify-between w-full ${scrolled ? 'bg-[#F5F1EB] md:bg-transparent' : ''}`}>
                         <Brand />
