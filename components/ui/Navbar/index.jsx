@@ -78,7 +78,7 @@ const Navbar = () => {
                             border border-[#003944] rounded-lg md:bg-transparent bg-[#72BACA] md:border-none md:text-gray-700">
                             {navigation.map((item, idx) => {
                                 return (
-                                    <li>
+                                    <li key={`li-${idx}`}>
                                         <Link href={item.path} key={idx} className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 md:rounded-[40px] md:border md:border-[#514a47] 
                                             justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
                                             {item.title}
