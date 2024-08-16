@@ -1,33 +1,48 @@
 import NavLink from "../NavLink"
 import Image from "next/image"
+import xIcon from "../../../public/logos/x.svg"
+import telegramIcon from "../../../public/logos/telegram.svg"
+import discordIcon from "../../../public/logos/discord.svg"
+
 
 const Hero = () => (
     <section>
-        <div className="text-gray-600 mt-28 flex flex-col">
-            <div className="text-center">
-                <div className="mx-auto sm:text-6xl text-center text__color--main text-8xl font-bold">
-                    The yield layer for shared security.
+        <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto">
+            <div className="text-center flex-col flex flex-1">
+                <div className="text-[#332B29] text-center font-bold text-[96px] leading-none max-w-[990px] mx-auto">
+                    The yield layer for shared <span className="bg-[#A1FD59]">security.</span>
                 </div>
-                <div className="flex mt-20 z-0">
-                    <Image src="/Construction.svg" width={500} height={665} alt="construction" className="ml-[-158px]" />
-                    <div className="ml-7 flex flex-col mt-10">
+                <div className="flex mt-20 z-0 w-full flex-1">
+                    <Image src="/construction.svg" width="470" height="478" alt="construction" />
+                    <div className="ml-7 flex flex-col mt-10 flex-1">
                         <div className="text__color--main text-[24px] text-left font-normal">
                             Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
                         </div>
-                        <div className="mt-10 flex">
-                            <NavLink
-                                href="/get-started"
-                                className="font-medium text-sm text-white hover:bg-gray-600 active:bg-gray-900 
-                                md:inline w-[180px] h-10 px-0 py-auto bg-[#332b29] rounded-[40px] gap-2.5 inline-flex "
-                            >
-                                RESTAKE NOW
+                        <div className="mt-10 flex flex-col">
+                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] p-[10px] justify-center 
+                                items-center gap-[10px] flex-shrink-0 rounded-full bg-[#332B29] text-[#FFF] 
+                                text-[16px] font-medium uppercase hover:text-[#F5F1EB] hover:bg-[#332b29c9]">
+                                join discord
                             </NavLink>
+                            <div className="flex justify-end right-0 p-6 mr-7 pt-[72px]">
+                                <NavLink href="https://x.com/yieldi_xyz" target="_blank "className="duration-150 hover:scale-110">
+                                    <Image src={xIcon} alt="x"/>
+                                </NavLink>
+                                <NavLink href="https://t.me/yieldi_labs" target="_blank" className="duration-150 hover:scale-110">
+                                    <Image src={telegramIcon} alt="telegram"/>
+                                </NavLink>
+                                <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="duration-150 hover:scale-110">
+                                    <Image src={discordIcon} alt="discord"/>
+                                </NavLink>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
-                <div className="w-full bg-[#003944] rounded-[60px] mt-[-150px] z-10 relative py-16 px-24 text-[#71bac9]">
+                
+                <div className="w-full bg-[#003944] rounded-[60px] z-10 relative py-16 px-24 text-[#71bac9] pb-32">
                     <span className="flex text-[#71bac9] text-xl font-medium uppercase">What is Yieldi?</span>
-                    <div className="w-[1081px] text-[#71bac9] text-5xl font-bold mt-12 text-left">Yieldi is a cutting-edge, gas-efficient yield-streaming solution initially deployed on Thorchain, leveraging its native ETH/BTC liquidity. </div>
+                    <div className="w-[962px] text-[#71bac9] text-5xl font-bold mt-12 text-left">Yieldi is a cutting-edge, gas-efficient yield-streaming solution initially deployed on Thorchain, leveraging its native ETH/BTC liquidity. </div>
                     <div className="w-[626px] text-[#71bac9] text-xl font-medium text-left ml-auto mt-20">
                         By integrating with Eigenlayer and Babylon, Yieldi allows users to delegate their Liquid Staking Tokens (LSTs) to an Actively Validated Set (AVS). The AVS can then stream yield back to the staker natively using Yieldi.
                     </div>

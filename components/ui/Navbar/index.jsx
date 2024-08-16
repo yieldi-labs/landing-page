@@ -52,8 +52,8 @@ const Navbar = () => {
     return (
         <header className='fixed top-0 w-full z-40'>
             <nav className={`w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""} ${scrolled ? 'bg-[#F5F1EB]' : ''}`}>
-                <div className="custom-screen items-center mx-auto md:flex">
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                <div className="custom-screen items-center mx-auto py-3 md:py-5 md:flex flex justify-center">
+                    <div className="custom-screen items-center mx-auto md:flex flex justify-center">
                         <Brand />
                         <div className="md:hidden">
                             <button role="button" aria-label="Open the menu" className="text-gray-500 hover:text-gray-800"
@@ -75,27 +75,21 @@ const Navbar = () => {
                     </div>
                     <div className={`flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:flex ${state ? "" : "hidden"} justify-between align-middle`}>
                         <ul className='text-gray-700 space-y-6 md:flex md:space-x-8 md:ml-5 md:space-y-0 md:text-gray-600 md:font-medium'>
-                            {
-                                navigation.map((item, idx) => {
-                                    return (
-                                        <li key={idx} className="text__color--main duration-150 hover:text-gray-900 h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] justify-center items-center gap-2.5 inline-flex">
-                                            <Link
-                                                href={item.path}
-                                                className="block"
-                                            >
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    )
-                                })
-                            }
+                            {navigation.map((item, idx) => {
+                                return (
+                                    <Link href={item.path} key={idx} className="block duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 rounded-[40px] border border-[#514a47] 
+                                        justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
+                                        {item.title}
+                                    </Link>
+                                )
+                            })}
                         </ul>
                         <div className='flex'>
-                            <NavLink
-                                href="/get-started"
-                                className="font-medium text-sm text-white hover:bg-gray-600 active:bg-gray-900 md:inline w-[159px] h-10 px-5 py-2.5 bg-[#332b29] rounded-[40px] justify-center items-center gap-2.5 inline-flex"
-                            >
-                                Launch App
+                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
+                                className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] active:bg-gray-900 h-10 w-[159px] px-5 py-2.5 rounded-[40px] 
+                                    border  border-[#514a47] justify-center items-center gap-2.5 inline-flex bg-[#332b29] text-[#F5F1EB] 
+                                    text-sm font-medium md:inline uppercase">
+                                join discord
                             </NavLink>
                         </div>
                     </div>
