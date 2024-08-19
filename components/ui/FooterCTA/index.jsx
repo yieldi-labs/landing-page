@@ -1,11 +1,10 @@
-import SectionWrapper from "../../SectionWrapper"
-import NavLink from "../NavLink"
+import SectionWrapper from "@components/SectionWrapper"
+import NavLink from "@components/ui/NavLink"
 import Image from "next/image"
-import xIcon from "../../../public/logos/x.svg"
-import telegramIcon from "../../../public/logos/telegram.svg"
-import discordIcon from "../../../public/logos/discord.svg"
 
-
+import xIcon from "@public/logos/x.svg"
+import telegramIcon from "@public/logos/telegram.svg"
+import discordIcon from "@public/logos/discord.svg"
 
 const FooterCTA = () => (
     <SectionWrapper className="bg-[#F5F1EB] py-10">

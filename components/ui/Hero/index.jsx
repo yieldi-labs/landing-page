@@ -1,13 +1,12 @@
-import NavLink from "../NavLink"
+import NavLink from "@components/ui/NavLink"
 import Image from "next/image"
-import xIcon from "../../../public/logos/x.svg"
-import telegramIcon from "../../../public/logos/telegram.svg"
-import discordIcon from "../../../public/logos/discord.svg"
-
+import xIcon from "@public/logos/x.svg"
+import telegramIcon from "@public/logos/telegram.svg"
+import discordIcon from "@public/logos/discord.svg"
 
 const Hero = () => (
     <section>
-        <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto" id="about">
+        <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto">
             <div className="text-center flex-col flex flex-1">
                 <div className="text-[#332B29] text-center font-bold text-[76px] xl:text-[96px] leading-none max-w-[990px] mx-auto">
                     The yield layer for shared <span className="bg-[#A1FD59]">security.</span>

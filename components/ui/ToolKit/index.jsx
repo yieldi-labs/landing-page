@@ -1,8 +1,8 @@
-import SectionWrapper from "../../SectionWrapper"
+import SectionWrapper from "@components/SectionWrapper"
 import Image from "next/image"
-import staking from "../../../public/icons/staking.svg"
-import calculation from "../../../public/icons/calculation.svg"
-import distribution from "../../../public/icons/distribution.svg"
+import staking from "@public/icons/staking.svg"
+import calculation from "@public/icons/calculation.svg"
+import distribution from "@public/icons/distribution.svg"
 
 const ToolKit = () => {
 
@@ -25,8 +25,8 @@ const ToolKit = () => {
     ]
 
     return (
-        <SectionWrapper>
-            <div id="solution" className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <SectionWrapper id="solution">
+            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-2xl space-y-3 text-center xl:text-left text-xl font-medium uppercase mt-10">
                     How does yieldi work?
                 </div>
