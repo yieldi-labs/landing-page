@@ -8,10 +8,10 @@ import discordIcon from "@public/logos/discord.svg"
 
 const FooterCTA = () => (
     <SectionWrapper className="bg-[#F5F1EB] py-10">
-        <div class="flex max-w-screen-2xl mx-auto xl:px-[55px] px-8">
+        <div className="flex max-w-screen-2xl mx-auto xl:px-[55px] px-8">
             <div className="flex flex-col items-center flex-1 p-[60px] gap-[45px] rounded-[60px] border border-[#524B48]">
-                <h1 class="text-[#332B29] text-center font-bold text-[48px] leading-normal self-stretch">
-                    The Yield Venue for Shared <span className="bg-[#A1FD59] p-3">Security</span>
+                <h1 className="text-[#332B29] text-center font-bold text-[48px] leading-[48px] self-stretch">
+                    The Yield Venue for Shared <span className="bg-[#A1FD59] p-1 md:p-3">Security</span>
                 </h1>
                 <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
                     className="flex h-[127px] p-[10px] justify-center items-center gap-[10px] self-stretch xl:rounded-[100px] 

@@ -50,7 +50,7 @@ const ToolKit = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-center xl:leading-[64px] leading-[60px]">What Problem Does Yieldi Solve?</div>
+                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px]">What Problem Does Yieldi Solve?</div>
                 <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9">
                     <div className="xl:mr-20 mr-0">
                         <span className="text-2xl font-bold">
