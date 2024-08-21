@@ -1,8 +1,8 @@
-import SectionWrapper from "../../SectionWrapper"
+import SectionWrapper from "@components/SectionWrapper"
 import Image from "next/image"
-import staking from "../../../public/icons/staking.svg"
-import calculation from "../../../public/icons/calculation.svg"
-import distribution from "../../../public/icons/distribution.svg"
+import staking from "@public/icons/staking.svg"
+import calculation from "@public/icons/calculation.svg"
+import distribution from "@public/icons/distribution.svg"
 
 const ToolKit = () => {
 
@@ -25,8 +25,8 @@ const ToolKit = () => {
     ]
 
     return (
-        <SectionWrapper>
-            <div id="solution" className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <SectionWrapper id="solution">
+            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-2xl space-y-3 text-center xl:text-left text-xl font-medium uppercase mt-10">
                     How does yieldi work?
                 </div>
@@ -50,7 +50,7 @@ const ToolKit = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-center xl:leading-[64px] leading-[60px]">What Problem Does Yieldi Solve?</div>
+                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px]">What Problem Does Yieldi Solve?</div>
                 <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9">
                     <div className="xl:mr-20 mr-0">
                         <span className="text-2xl font-bold">

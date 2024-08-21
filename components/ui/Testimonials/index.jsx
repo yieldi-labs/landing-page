@@ -1,4 +1,4 @@
-import SectionWrapper from "../../SectionWrapper"
+import SectionWrapper from "@components/SectionWrapper"
 
 const Testimonials = () => {
 
@@ -26,9 +26,9 @@ const Testimonials = () => {
     ]
 
     return (
-        <SectionWrapper className="pb-0 xl:pb-0">
+        <SectionWrapper className="pb-0 xl:pb-0" id="components">
             <div className="flex flex-col justify-center">
-                <div id="components" className="w-full bg-[#72BACA] xl:rounded-[60px] rounded-3xl z-10
+                <div className="w-full bg-[#72BACA] xl:rounded-[60px] rounded-3xl z-10
                     xl:py-16 py-8 xl:px-24 px-8 max-w-screen-2xl flex-1 mx-auto">
                 <div className="text-[#003944] xl:text-[64px] text-[42px] xl:text-start text-center font-bold uppercase flex-1">key components</div>
                     <ul>

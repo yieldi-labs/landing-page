@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import Brand from '../Brand'
-import NavLink from '../NavLink'
+import Brand from "@components/ui/Brand"
+import NavLink from "@components/ui/NavLink"
+import { twJoin } from 'tailwind-merge'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
     }, []);
     
     const navigation = [
-        { title: "ABOUT", path: "#about" },
+        { title: "ABOUT", path: "#" },
         { title: "SOLUTION", path: "#solution" },
         { title: "COMPONENTS", path: "#components" },
     ]
@@ -51,7 +52,7 @@ const Navbar = () => {
 
     return (
         <header className='fixed top-0 w-full z-40'>
-            <nav className={`w-full md:static md:text-sm flex ${state ? "fixed z-10 h-full" : ""} ${scrolled ? 'md:bg-[#F5F1EB] bg-transparent' : ''}`}>
+            <nav className={twJoin("w-full md:static md:text-sm flex", state && "fixed z-10 h-full", scrolled && "md:bg-[#F5F1EB] bg-transparent")}>
                 <div className="md:custom-screen md:mx-auto gap-2 md:py-5 md:flex flex w-full md:w-auto items-end md:items-center flex-col md:flex-row lg:w-[990px]">
                     <div className={`custom-screen items-center mx-auto p-4 md:p-0 flex justify-between w-full ${scrolled ? 'bg-[#F5F1EB] md:bg-transparent' : ''}`}>
                         <Brand />
@@ -78,7 +79,7 @@ const Navbar = () => {
                             border border-[#003944] rounded-lg md:bg-transparent bg-[#72BACA] md:border-none md:text-gray-700">
                             {navigation.map((item, idx) => {
                                 return (
-                                    <li key={`li-${idx}`}>
+                                    <li key={idx}>
                                         <Link href={item.path} key={idx} className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 md:rounded-[40px] md:border md:border-[#514a47] 
                                             justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
                                             {item.title}

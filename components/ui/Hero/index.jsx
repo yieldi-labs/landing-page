@@ -1,22 +1,21 @@
-import NavLink from "../NavLink"
+import NavLink from "@components/ui/NavLink"
 import Image from "next/image"
-import xIcon from "../../../public/logos/x.svg"
-import telegramIcon from "../../../public/logos/telegram.svg"
-import discordIcon from "../../../public/logos/discord.svg"
-
+import xIcon from "@public/logos/x.svg"
+import telegramIcon from "@public/logos/telegram.svg"
+import discordIcon from "@public/logos/discord.svg"
 
 const Hero = () => (
     <section>
-        <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto" id="about">
+        <div className="text-gray-600 mt-28 flex flex-col max-w-screen-2xl mx-auto">
             <div className="text-center flex-col flex flex-1">
                 <div className="text-[#332B29] text-center font-bold text-[76px] xl:text-[96px] leading-none max-w-[990px] mx-auto">
-                    The yield layer for shared <span className="bg-[#A1FD59]">security.</span>
+                    The yield layer for shared <span className="relative z-[-1] before:absolute before:content-[''] before:w-[100%] before:h-[68%] before:inset-y-[16px] before:z-[-2] before:bg-[#A1FD59]">security.</span>
                 </div>
                 <div className="flex mt-20 z-0 w-full flex-1 flex-col md:flex-row md:items-stretch items-center">
                     <Image src="/construction.svg" width="470" height="478" alt="construction" />
                     <div className="xl:ml-7 flex flex-col xl:mt-10 sm:px-2 flex-1 px-4 xl:px-0 justify-between h-auto">
                         <div className="text__color--main text-[24px] text-left font-normal">
-                            Launch liquidity for shared security <br /> protocols. <br /> Native yield-streaming for the lowest cost <br /> of security.
+                            Launch liquidity for shared security protocols. <br /> Native yield-streaming for the lowest cost of security.
                         </div>
                         <div className="mt-10 flex flex-col">
                             <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank" className="flex w-[241px] h-[58px] 
