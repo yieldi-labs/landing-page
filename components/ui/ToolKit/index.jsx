@@ -39,7 +39,7 @@ const ToolKit = () => {
                                     <Image src={item.icon} alt={item.title} />
                                 </div>
                                 <div className="flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start">
-                                    <h4 className="text-[36px] font-bold text-[#332B29] h-[90px] xl:w-[70px] leading-[40px] xl:text-start text-center">
+                                    <h4 className="text-[36px] font-bold text-[#332B29] h-[90px] xl:w-[70px] leading-[40px] xl:text-start text-center font-gt-america-ext">
                                         {item.title}
                                     </h4>
                                     <p className="mt-5 text-xl font-medium text-[#524B48]">
@@ -50,10 +50,10 @@ const ToolKit = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px]">What Problem Does Yieldi Solve?</div>
+                <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px] font-gt-america-ext">What Problem Does Yieldi Solve?</div>
                 <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9">
                     <div className="xl:mr-20 mr-0">
-                        <span className="text-2xl font-bold">
+                        <span className="text-2xl font-bold font-gt-america-ext">
                             Yieldi addresses critical issues in the AVS ecosystem, enhancing price discovery and liquidity for AVS tokens. <br/>
                         </span>
                         <span className="text-[#514a47] text-2xl font-medium"><br/></span>
@@ -64,7 +64,7 @@ const ToolKit = () => {
                             Because the yield is lower risk, and in an asset delivered to the user, removing friction, the cost of yield will be much lower. Thus AVS's will naturally prefer yield-streaming because it will require less inflation and they can transition to the fee regime faster, avoiding security gaps.
                         </span>
                     </div>
-                    <img src="/diagram.svg" alt="diagram" className="mt-6 xl:mt-0"/>
+                    <Image width={0} height={0} src="/diagram.svg" alt="diagram" className="mt-6 xl:mt-0 w-auto"/>
                 </div>
             </div>
         </SectionWrapper>
