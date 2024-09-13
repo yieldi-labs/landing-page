@@ -19,68 +19,69 @@ const ToolKit = () => {
     {
       icon: distribution,
       title: "Yield Distribution",
-      desc: "THORChain swaps the yield to native assets and holds it in a yield collector module assigned to the staker’s L1 address.",
+      desc: "THORChain swaps the yield to native assets and holds it in a yield collector module assigned to the staker's L1 address.",
     },
   ];
 
   return (
     <SectionWrapper id="solution">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="max-w-2xl space-y-3 text-center xl:text-left text-xl font-medium uppercase mt-10">
+      <div className="mx-auto max-w-screen-xl pt-[40rem] xs:pt-[30rem] md:pt-[0] mobile-lg:pt-[34rem]">
+        <h2 className="text-xl font-medium uppercase md:mt-20 mt-4 text-left">
           How does yieldi work?
-        </div>
-        <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+        </h2>
+        <div className="mt-4 flex flex-col">
+          <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
-              <li
-                key={idx}
-                className="flex gap-x-4 p-5 rounded-[20px] border border-[#6d645d] flex-col 
-                                justify-center items-center xl:justify-start xl:items-start gap-[30px]"
-              >
-                <div className="flex-none flex items-center justify-center">
-                  <Image src={item.icon} alt={item.title} />
-                </div>
-                <div className="flex flex-col sm:justify-center sm:items-center xl:justify-start xl:items-start">
-                  <h4 className="text-[36px] font-bold text-[#332B29] h-[90px] xl:w-[70px] leading-[40px] xl:text-start text-center">
-                    {item.title}
-                  </h4>
-                  <p className="mt-5 text-xl font-medium text-[#524B48]">
-                    {item.desc}
-                  </p>
-                </div>
-              </li>
+              <FeatureCard key={idx} {...item} />
             ))}
           </ul>
-        </div>
-        <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px]">
-          What Problem Does Yieldi Solve?
-        </div>
-        <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9">
-          <div className="xl:mr-20 mr-0">
-            <span className="text-2xl font-bold">
-              Yieldi addresses critical issues in the AVS ecosystem, enhancing
-              price discovery and liquidity for AVS tokens. <br />
-            </span>
-            <span className="text-[#514a47] text-2xl font-medium">
-              <br />
-            </span>
-            <span className="text-[#514a47] text-2xl font-normal">
-              By providing real yield in native assets (ETH/BTC), Yieldi
-              incentivizes users to delegate their LSTs to AVS operators.
-              <br />
-              <br />
-              Because the yield is lower risk, and in an asset delivered to the
-              user, removing friction, the cost of yield will be much lower.
-              Thus AVS's will naturally prefer yield-streaming because it will
-              require less inflation and they can transition to the fee regime
-              faster, avoiding security gaps.
-            </span>
+          <h3 className="text-title xl:text-title-desktop font-bold xl:mt-32 mt-8 pt-2 text-start font-gt-america-ext">
+            What Problem Does Yieldi Solve?
+          </h3>
+          <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-28 mt-9 pb-12">
+            <div className="xl:mr-20 mr-0 max-w-2xl">
+              <p className="text-2xl font-bold font-gt-america-ext mb-6">
+                Yieldi addresses critical issues in the AVS ecosystem, enhancing
+                price discovery and liquidity for AVS tokens.
+              </p>
+              <p className="text-primary-light text-2xl font-normal">
+                By providing real yield in native assets (ETH/BTC), Yieldi
+                incentivizes users to delegate their LSTs to AVS operators.
+                <br />
+                <br />
+                Because the yield is lower risk, and in an asset delivered to
+                the user, removing friction, the cost of yield will be much
+                lower. Thus AVS's will naturally prefer yield-streaming because
+                it will require less inflation and they can transition to the
+                fee regime faster, avoiding security gaps.
+              </p>
+            </div>
+            <Image
+              width={0}
+              height={0}
+              src="/diagram.svg"
+              alt="diagram"
+              className="mt-6 xl:mt-0 w-auto"
+            />
           </div>
-          <img src="/diagram.svg" alt="diagram" className="mt-6 xl:mt-0" />
         </div>
       </div>
     </SectionWrapper>
   );
 };
+
+const FeatureCard = ({ icon, title, desc }) => (
+  <li className="flex flex-col gap-[30px] p-5 rounded-large border border-border-light items-center xl:items-start">
+    <div className="flex-none flex items-center justify-center">
+      <Image src={icon} alt={title} />
+    </div>
+    <div className="flex flex-col sm:items-center xl:items-start">
+      <h4 className="text-[36px] font-bold text-primary h-[90px] xl:w-[70px] leading-[40px] xl:text-start text-center font-gt-america-ext">
+        {title}
+      </h4>
+      <p className="mt-5 text-xl font-medium text-border">{desc}</p>
+    </div>
+  </li>
+);
 
 export default ToolKit;

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html className="scroll-smooth" lang="en">
       <Head />
-      <body className='md:overflow-visible bg-[url("/background.jpg")] body'>
+      <body className='md:overflow-visible bg-[url("/background.jpg")] body font-gt-america'>
         <Main />
         <NextScript />
       </body>
