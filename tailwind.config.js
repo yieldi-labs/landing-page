@@ -14,8 +14,8 @@ module.exports = {
         bold: "700",
       },
       fontFamily: {
-        "gt-america": ["GT-America", "sans-serif"],
-        "gt-america-ext": ["GT-America-Extended", "sans-serif"],
+        "gt-america": ["GT-America"],
+        "gt-america-ext": ["GT-America-Extended"],
       }
     },
   },

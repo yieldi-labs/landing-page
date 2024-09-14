@@ -37,6 +37,20 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "GT-America-Extended";
+  src: url("/fonts/GT-America-Extended-Medium-Trial.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GT-America-Extended";
+  src: url("/fonts/GT-America-Extended-Bold-Trial.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
 .custom-screen {
     @apply max-w-screen-xl mx-auto px-4 md:px-8;
 }
@@ -51,6 +65,7 @@
 .body {
     background:#F5F1EB url('/background.png');
     background-repeat: repeat-x;
+    background-attachment: fixed;
   
     /* Stack the color and image */
     background-blend-mode: multiply;

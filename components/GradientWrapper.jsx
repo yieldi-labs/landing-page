@@ -1,8 +1,8 @@
 const GradientWrapper = ({ children, ...props }) => (
     <div
         {...props}
-        className={`relative overflow-hidden ${props.className || ""} mt-[-72px] bg-[#F5F1EB]`}>
-        <div className="relative">
+        className={`relative overflow-hidden ${props.className || ""} bg-[#F5F1EB]`}>
+        <div className="md:relative">
             {children}
         </div>
     </div>

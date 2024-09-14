@@ -52,8 +52,8 @@ const Navbar = () => {
 
     return (
         <header className='fixed top-0 w-full z-40'>
-            <nav className={twJoin("w-full md:static md:text-sm flex transition-all duration-150 ease-in-out", state && "fixed z-10 h-full", scrolled && "md:bg-[#F5F1EB] bg-transparent")}>
-                <div className="md:custom-screen md:mx-auto gap-2 md:py-5 md:flex flex w-full md:w-auto items-end md:items-center flex-col md:flex-row lg:w-[990px]">
+            <nav className={twJoin("w-full md:static md:text-sm flex transition-all duration-150 ease-in-out px-0 md:px-10", state && "fixed z-10 h-full", scrolled && "md:bg-[#F5F1EB] bg-transparent")}>
+                <div className="md:custom-screen md:mx-auto gap-2 md:py-5 md:flex flex items-end md:items-center flex-col md:flex-row w-full">
                     <div className={`custom-screen items-center mx-auto p-4 md:p-0 flex justify-between w-full ${scrolled ? 'bg-[#F5F1EB] md:bg-transparent' : ''}`}>
                         <Brand />
                         <div className="md:hidden">
@@ -75,26 +75,28 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className={`flex-1 pb-3 md:pb-0 md:flex ${state ? "" : "hidden"} justify-between align-middle`}>
-                        <ul className="text-[#003944] md:flex md:space-x-8 mx-5 md:space-y-0 md:font-medium py-2 md:py-0
-                            border border-[#003944] rounded-lg md:bg-transparent bg-[#72BACA] md:border-none md:text-gray-700">
-                            {navigation.map((item, idx) => {
-                                return (
-                                    <li key={idx}>
-                                        <Link href={item.path} key={idx} className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 md:rounded-[40px] md:border md:border-[#514a47] 
-                                            justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
-                                            {item.title}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                        <div className="flex hidden">
-                            <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
-                                className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] active:bg-gray-900 h-10 w-[159px] px-5 py-2.5 rounded-[40px] 
-                                    border  border-[#514a47] justify-center items-center gap-2.5 inline-flex bg-[#332b29] text-[#F5F1EB] 
-                                    text-sm font-medium md:inline uppercase">
-                                join discord
-                            </NavLink>
+                        <div className="flex flex-1 justify-end">
+                            <ul className="text-[#003944] md:flex md:space-x-8 md:space-y-0 md:font-medium py-2 md:py-0
+                                border border-[#003944] rounded-lg md:bg-transparent bg-[#72BACA] md:border-none md:text-gray-700">
+                                {navigation.map((item, idx) => {
+                                    return (
+                                        <li key={idx}>
+                                            <Link href={item.path} key={idx} className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] h-10 px-5 py-2.5 md:rounded-[40px] md:border md:border-[#514a47] 
+                                                justify-center items-center gap-2.5 inline-flex text-center font-medium text-[16px] leading-normal uppercase text-[#332B29]">
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                            <div className="flex hidden">
+                                <NavLink href="https://discord.gg/8aFPCXPwAd" target="_blank"
+                                    className="duration-150 hover:text-[#F5F1EB] hover:bg-[#332b29c9] active:bg-gray-900 h-10 w-[159px] px-5 py-2.5 rounded-[40px] 
+                                        border  border-[#514a47] justify-center items-center gap-2.5 inline-flex bg-[#332b29] text-[#F5F1EB] 
+                                        text-sm font-medium md:inline uppercase">
+                                    join discord
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

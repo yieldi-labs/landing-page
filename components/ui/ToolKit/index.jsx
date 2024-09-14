@@ -26,11 +26,11 @@ const ToolKit = () => {
 
     return (
         <SectionWrapper id="solution">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-2xl space-y-3 text-center xl:text-left text-xl font-medium uppercase mt-10">
+            <div className="mx-auto px-4 md:px-12 max-w-screen-xl md:sticky md:top-0 pb-12 md:pb-0 pt-56 md:pt-8">
+                <div className="space-y-3 text-center xl:text-left text-xl font-medium uppercase md:mt-20 mt-[152px] pt-3">
                     How does yieldi work?
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 flex flex-col">
                     <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
                         {features.map((item, idx) => (
                             <li key={idx} className="flex gap-x-4 p-5 rounded-[20px] border border-[#6d645d] flex-col 
@@ -49,9 +49,8 @@ const ToolKit = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
                 <div className="text-[64px] font-bold xl:mt-32 mt-8 pt-2 text-start xl:leading-[64px] leading-[60px] font-gt-america-ext">What Problem Does Yieldi Solve?</div>
-                <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9">
+                <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-[110px] mt-9 pb-12">
                     <div className="xl:mr-20 mr-0">
                         <span className="text-2xl font-bold font-gt-america-ext">
                             Yieldi addresses critical issues in the AVS ecosystem, enhancing price discovery and liquidity for AVS tokens. <br/>
@@ -65,6 +64,7 @@ const ToolKit = () => {
                         </span>
                     </div>
                     <Image width={0} height={0} src="/diagram.svg" alt="diagram" className="mt-6 xl:mt-0 w-auto"/>
+                </div>
                 </div>
             </div>
         </SectionWrapper>
