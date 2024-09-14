@@ -41,7 +41,7 @@ const Hero = () => (
                 </div>
             </div>
             <div className="text-center flex-col flex flex-1">
-                <div className="w-full bg-[#003944] xl:rounded-[60px] rounded-3xl z-10 relative py-8 mt-14 md:mt-0 xl:py-16 px-12 xl:px-24 text-[#71bac9] pb-16 xl:pb-32 flex-col xl:flex-row top-[768px]">
+                <div className="w-full bg-[#003944] xl:rounded-[60px] rounded-3xl z-10 relative py-8 mt-14 md:mt-0 xl:py-16 px-12 xl:px-24 text-[#71bac9] pb-16 xl:pb-32 flex-col xl:flex-row md:top-[768px] top-[780px]">
                     <span className="flex text-[#71bac9] text-xl font-medium uppercase">What is Yieldi?</span>
                     <div className="xl:w-[962px] text-[#71bac9] text-2xl xl:text-5xl font-bold mt-6 xl:mt-12 text-left font-gt-america-ext">Yieldi is a cutting-edge, gas-efficient yield-streaming solution initially deployed on Thorchain, leveraging its native ETH/BTC liquidity. </div>
                     <div className="xl:w-[626px] text-[#71bac9] text-lg xl:text-xl font-medium text-left ml-auto mt-10 xl:mt-20">

@@ -26,8 +26,8 @@ const ToolKit = () => {
 
     return (
         <SectionWrapper id="solution">
-            <div className="mx-auto px-4 md:px-12 max-w-screen-xl md:sticky md:top-0 pb-12 md:pb-0 pt-56 md:pt-8">
-                <div className="space-y-3 text-center xl:text-left text-xl font-medium uppercase md:mt-20 mt-[152px] pt-3">
+            <div className="mx-auto max-w-screen-xl md:sticky md:top-0">
+                <div className="space-y-3 text-center xl:text-left text-xl font-medium uppercase md:mt-20 mt-4">
                     How does yieldi work?
                 </div>
                 <div className="mt-12 flex flex-col">
