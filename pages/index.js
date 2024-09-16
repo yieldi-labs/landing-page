@@ -1,5 +1,5 @@
 import Head from "next/head";
-import GradientWrapper from "@components/GradientWrapper"
+import GradientWrapper from "@components/GradientWrapper";
 import FooterCTA from "@components/ui/FooterCTA";
 import Hero from "@components/ui/Hero";
 import Testimonials from "@components/ui/Testimonials";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name='robots' content='index' />
+        <meta name="robots" content="index" />
       </Head>
       <Hero />
       <GradientWrapper>

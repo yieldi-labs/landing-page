@@ -5,7 +5,7 @@
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@styles/*": ["styles/*"],
-      "@public/*": ["public/*"],
+      "@public/*": ["public/*"]
     }
   },
   "include": ["**/*.js", "**/*.jsx"],
