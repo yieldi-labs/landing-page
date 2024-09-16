@@ -8,7 +8,7 @@ const Hero = () => (
     <section className="text-gray-600 mt-28 flex flex-col h-screen w-full">
         <div className="text-center flex-col flex flex-1 fixed w-full">
             <h1 className="text-primary text-center font-bold text-hero-mobile xl:text-hero leading-none max-w-hero mx-auto font-gt-america-ext">
-                The yield layer for shared <span className="relative z-[-1] before:absolute before:content-[''] before:w-full before:h-[68%] before:inset-y-4 before:z-[-2] before:bg-highlight">security.</span>
+                The yield layer for shared <span className="relative z-[-1] bg-highlight md:before:absolute md:before:content-[''] md:before:w-full md:before:h-[68%] md:before:inset-y-4 md:before:z-[-2] md:before:bg-highlight md:bg-transparent">security.</span>
             </h1>
             <div className="flex mt-20 z-0 w-full flex-1 flex-col md:flex-row md:items-stretch items-center">
                 <Image src="/construction.svg" width="470" height="478" alt="construction" />

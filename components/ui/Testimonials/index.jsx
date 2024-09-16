@@ -50,7 +50,7 @@ const Testimonials = () => {
             <div className="flex max-w-screen-2xl mx-auto xl:px-[55px] px-8 mb-24">
                 <div className="flex flex-col items-center flex-1 p-[60px] gap-[45px] rounded-large border border-border">
                     <h1 className="text-primary text-center font-bold text-subtitle leading-[48px] self-stretch font-gt-america-ext">
-                        The Yield Venue for Shared <span className="relative z-0 before:absolute before:content-[''] before:w-full before:h-[92%] before:inset-y-1.5 before:z-[-1] before:bg-highlight">Security</span>
+                        The Yield Venue for Shared <span className="relative z-[0] bg-highlight">Security</span>
                     </h1>
                     <div className="flex justify-center gap-4">
                         <SocialLink href="https://x.com/yieldi_xyz" icon={xIcon} alt="x" />
