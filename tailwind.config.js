@@ -57,6 +57,9 @@ module.exports = {
         'hero': '990px',
         'content': '520px',
       },
+      screens: {
+        'mobile-lg': '400px',
+      }
     },
   },
   plugins: [

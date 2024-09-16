@@ -31,7 +31,7 @@ const Testimonials = () => {
     ]
 
     return (
-        <SectionWrapper className="z-10 py-0 md:py-0" id="components">
+        <SectionWrapper className="z-10 pt-1 pb-8 px-0" id="components">
             <div className="flex flex-col justify-center">
                 <div className="w-full bg-accent rounded-large xl:py-16 py-8 xl:px-24 px-8 flex-1 mx-auto">
                     <h2 className="text-dark xl:text-title text-title-mobile xl:text-start text-center font-bold uppercase flex-1">key components</h2>

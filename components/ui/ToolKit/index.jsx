@@ -25,11 +25,11 @@ const ToolKit = () => {
 
     return (
         <SectionWrapper id="solution">
-            <div className="mx-auto max-w-screen-xl md:sticky md:top-0">
-                <h2 className="text-xl font-medium uppercase md:mt-20 mt-4 text-center xl:text-left">
+            <div className="mx-auto max-w-screen-xl pt-[40rem] xs:pt-[30rem] md:pt-[0] mobile-lg:pt-[34rem]">
+                <h2 className="text-xl font-medium uppercase md:mt-20 mt-4 text-left">
                     How does yieldi work?
                 </h2>
-                <div className="mt-12 flex flex-col">
+                <div className="mt-4 flex flex-col">
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {features.map((item, idx) => (
                             <FeatureCard key={idx} {...item} />
