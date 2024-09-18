@@ -24,9 +24,9 @@ const ToolKit = () => {
   ];
 
   return (
-    <SectionWrapper id="solution">
-      <div className="mx-auto max-w-screen-xl pt-[40rem] xs:pt-[30rem] md:pt-[0] mobile-lg:pt-[34rem]">
-        <h2 className="text-xl font-medium uppercase md:mt-20 mt-4 text-left">
+    <SectionWrapper id="solution" className="lg:pt-28">
+      <div className="mx-auto max-w-screen-xl">
+        <h2 className="text-xl font-medium uppercase lg:mt-20 mt-4 text-left">
           How does yieldi work?
         </h2>
         <div className="mt-4 flex flex-col">
@@ -35,11 +35,11 @@ const ToolKit = () => {
               <FeatureCard key={idx} {...item} />
             ))}
           </ul>
-          <h3 className="text-title xl:text-title-desktop font-bold xl:mt-32 mt-8 pt-2 text-start font-gt-america-ext">
+          <h3 className="text-3xl lg:text-title-desktop font-bold lg:mt-32 mt-8 pt-2 text-start font-gt-america-ext">
             What Problem Does Yieldi Solve?
           </h3>
-          <div className="flex xl:flex-row flex-col justify-between items-center xl:mt-28 mt-9 pb-12">
-            <div className="xl:mr-20 mr-0 max-w-2xl">
+          <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-28 mt-9 pb-12">
+            <div className="lg:mr-20 mr-0 max-w-2xl">
               <p className="text-2xl font-bold font-gt-america-ext mb-6">
                 Yieldi addresses critical issues in the AVS ecosystem, enhancing
                 price discovery and liquidity for AVS tokens.
@@ -61,7 +61,7 @@ const ToolKit = () => {
               height={0}
               src="/diagram.svg"
               alt="diagram"
-              className="mt-6 xl:mt-0 w-auto"
+              className="mt-6 lg:mt-0 w-auto"
             />
           </div>
         </div>
@@ -71,12 +71,12 @@ const ToolKit = () => {
 };
 
 const FeatureCard = ({ icon, title, desc }) => (
-  <li className="flex flex-col gap-[30px] p-5 rounded-large border border-border-light items-center xl:items-start">
+  <li className="flex flex-col gap-[30px] p-5 rounded-large border border-border-light items-center lg:items-start">
     <div className="flex-none flex items-center justify-center">
       <Image src={icon} alt={title} />
     </div>
-    <div className="flex flex-col sm:items-center xl:items-start">
-      <h4 className="text-[36px] font-bold text-primary h-[90px] xl:w-[70px] leading-[40px] xl:text-start text-center font-gt-america-ext">
+    <div className="flex flex-col sm:items-center lg:items-start">
+      <h4 className="text-[36px] font-bold text-primary h-[90px] lg:w-[70px] leading-[40px] lg:text-start text-center font-gt-america-ext">
         {title}
       </h4>
       <p className="mt-5 text-xl font-medium text-border">{desc}</p>

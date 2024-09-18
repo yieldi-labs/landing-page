@@ -40,24 +40,24 @@ const Navbar = () => {
   };
 
   const navClasses = twMerge(
-    "w-full md:static md:text-sm flex transition-all duration-150 ease-in-out px-0 md:px-10",
+    "w-full lg:static lg:text-sm flex transition-all duration-150 ease-in-out px-0 lg:px-10",
     isMenuOpen && "fixed z-10 h-full",
-    scrolled && "md:bg-secondary bg-transparent",
+    scrolled && "lg:bg-secondary bg-transparent",
   );
 
   const headerClasses = twMerge(
-    "custom-screen items-center mx-auto p-4 md:p-0 flex justify-between w-full",
-    scrolled && "bg-secondary md:bg-transparent",
+    "custom-screen items-center mx-auto p-4 lg:p-0 flex justify-between w-full",
+    scrolled && "bg-secondary lg:bg-transparent",
   );
 
   return (
     <header className="fixed top-0 w-full z-40">
       <nav className={navClasses}>
-        <div className="md:custom-screen md:mx-auto gap-2 md:py-5 md:flex flex items-end md:items-center flex-col md:flex-row w-full">
+        <div className="lg:custom-screen lg:mx-auto gap-2 lg:py-5 lg:flex flex items-end lg:items-center flex-col lg:flex-row w-full">
           <div className={headerClasses}>
             <Brand />
             <button
-              className="text-gray-500 hover:text-gray-800 md:hidden"
+              className="text-gray-500 hover:text-gray-800 lg:hidden"
               onClick={toggleMenu}
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >
@@ -93,18 +93,18 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`flex-1 pb-3 md:pb-0 md:flex ${isMenuOpen ? "" : "hidden"} justify-between align-middle`}
+            className={`flex-1 pb-3 lg:pb-0 lg:flex ${isMenuOpen ? "" : "hidden"} justify-between align-middle`}
           >
             <div className="flex flex-1 justify-end">
               <ul
-                className="text-dark md:flex md:space-x-8 md:space-y-0 md:font-medium py-2 md:py-0
-                                border border-dark rounded-lg md:bg-transparent bg-accent md:border-none md:text-gray-700"
+                className="text-dark lg:flex lg:space-x-8 lg:space-y-0 lg:font-medium py-2 lg:py-0
+                                border border-dark rounded-lg lg:bg-transparent bg-accent lg:border-none lg:text-gray-700"
               >
                 {navigation.map((item, idx) => (
                   <li key={idx}>
                     <Link
                       href={item.path}
-                      className="duration-150 hover:text-secondary hover:bg-primary/80 h-10 px-5 py-2.5 md:rounded-nav md:border md:border-primary-light 
+                      className="duration-150 hover:text-secondary hover:bg-primary/80 h-10 px-5 py-2.5 lg:rounded-nav lg:border lg:border-primary-light 
                                             justify-center items-center gap-2.5 inline-flex text-center font-medium text-nav leading-normal uppercase text-primary"
                     >
                       {item.title}

@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="robots" content="index" />
       </Head>
       <Hero />
-      <GradientWrapper className="md:sticky md:-top-96">
+      <GradientWrapper className="lg:sticky lg:-top-96">
         <ToolKit />
       </GradientWrapper>
       <GradientWrapper>

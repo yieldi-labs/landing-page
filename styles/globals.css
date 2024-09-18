@@ -52,7 +52,7 @@
 }
 
 .custom-screen {
-  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+  @apply max-w-screen-xl mx-auto px-4 lg:px-8;
 }
 
 .gradient-border {

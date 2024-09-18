@@ -27,7 +27,7 @@ module.exports = {
       fontSize: {
         nav: "16px",
         hero: ["96px", "96px"],
-        "hero-mobile": ["76px", "76px"],
+        "hero-mobile": "36px",
         title: ["64px", "60px"],
         "title-desktop": ["64px", "64px"],
         "title-mobile": ["42px", "42px"],
