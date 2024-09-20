@@ -9,7 +9,7 @@ import calculation from "@public/icons/calculation.svg";
 import distribution from "@public/icons/distribution.svg";
 
 const Hero = () => (
-  <section className="text-gray-600 flex flex-col h-screen w-full sticky top-0">
+  <section className="text-gray-600 flex flex-col lg:h-screen w-full lg:sticky lg:top-0">
     <div className="text-center pt-32 flex-col flex lg:flex-1 w-full h-full">
       <h1 className="text-primary text-center font-bold text-hero-mobile lg:text-hero leading-none max-w-hero mx-auto font-gt-america-ext">
         The yield layer for shared{" "}
@@ -17,13 +17,13 @@ const Hero = () => (
           security.
         </span>
       </h1>
-      <div className="flex z-0 pt-20 w-full flex-1 flex-col lg:flex-row lg:items-stretch items-center">
+      <div className="flex z-0 pt-20 w-full flex-1 flex-col lg:flex-row lg:items-stretch items-center mb-16 lg:mb-0">
         <Image
           src="/construction.svg"
-          width="320"
-          height="328"
+          width="470"
+          height="478"
           alt="construction"
-          className="lg:w-[470px] lg:h-[478px] lg:self-end self-start"
+          className="lg:self-end self-start"
         />
         <div className="mt-8 lg:ml-7 lg:mt-0 flex flex-col lg:mt-10 sm:px-2 flex-1 px-4 lg:px-0 justify-between h-auto">
           <span />
@@ -42,7 +42,7 @@ const Hero = () => (
 
 const WhatIsYieldi = () => {
   return (
-    <section className="sticky top-0 relative w-full bg-dark rounded-3xl lg:rounded-[60px] relative py-8 lg:py-16 px-12 lg:px-24 text-accent-dark flex-col lg:flex-row">
+    <section className="lg:sticky lg:top-0 relative w-full bg-dark rounded-3xl lg:rounded-[60px] relative py-8 lg:py-16 px-12 lg:px-24 text-accent-dark flex-col lg:flex-row">
       <span className="flex text-accent-dark text-xl font-medium uppercase">
         What is Yieldi?
       </span>
@@ -104,7 +104,7 @@ const ToolKit = () => {
   ];
 
   return (
-    <section id="solution" className="sticky top-0 bg-[#F5F1EB] pt-20">
+    <section id="solution" className="lg:sticky lg:top-0 bg-[#F5F1EB] pt-20">
       <div className="mx-auto max-w-screen-xl px-4">
         <h2 className="text-xl font-medium uppercase text-left">
           How does yieldi work?
@@ -147,7 +147,7 @@ const ToolKit = () => {
         </div>
       </div>
 
-      <section className="sticky top-0" id="components">
+      <section className="lg:sticky lg:top-0" id="components">
         <div className="flex flex-col justify-center mb-20">
           <div className="w-full bg-accent rounded-3xl lg:rounded-[60px] lg:py-16 py-8 lg:px-24 px-8 flex-1 mx-auto">
             <h2 className="text-dark lg:text-title text-title-mobile lg:text-start text-center font-bold uppercase flex-1 mb-16">
@@ -164,12 +164,12 @@ const ToolKit = () => {
               ))}
             </ul>
           </div>
-          <div className="lg:w-[1280px] mx-auto text-center text-primary text-[40px] font-bold lg:pt-20 lg:px-24 pt-10 px-5 font-gt-america-ext leading-[48px]">
+          <div className="lg:w-[1280px] mx-auto text-center text-primary text-lg lg:text-[40px] font-bold lg:pt-20 lg:px-24 pt-10 px-5 font-gt-america-ext lg:leading-[48px]">
             Join the future of yield streaming with Yieldi and experience
             efficient, secure, and innovative financial growth.
           </div>
         </div>
-        <div className="flex max-w-screen-2xl mx-auto pb-20">
+        <div className="flex max-w-screen-2xl mx-auto pb-20 px-4">
           <div className="flex flex-col items-center flex-1 p-[60px] gap-[45px] rounded-3xl lg:rounded-[40px] border border-border">
             <h1 className="text-2xl text-primary text-center font-bold lg:text-subtitle lg:leading-[48px] self-stretch font-gt-america-ext">
               The Yield Venue for Shared{" "}
