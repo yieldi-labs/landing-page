@@ -9,7 +9,7 @@ import calculation from "@public/icons/calculation.svg";
 import distribution from "@public/icons/distribution.svg";
 
 const Hero = () => (
-  <section className="text-gray-600 flex flex-col lg:h-screen w-full lg:sticky lg:top-0">
+  <section className="text-gray-600 flex flex-col w-full lg:sticky lg:top-0">
     <div className="text-center pt-32 flex-col flex lg:flex-1 w-full h-full">
       <h1 className="text-primary text-center font-bold text-hero-mobile lg:text-hero leading-none max-w-hero mx-auto font-gt-america-ext">
         The yield layer for shared{" "}
@@ -17,7 +17,7 @@ const Hero = () => (
           security.
         </span>
       </h1>
-      <div className="flex z-0 pt-20 w-full flex-1 flex-col lg:flex-row lg:items-stretch items-center mb-16 lg:mb-0">
+      <div className="flex z-0 pt-20 w-full flex-1 flex-col lg:flex-row lg:items-stretch items-center mb-8 lg:mb-0">
         <Image
           src="/construction.svg"
           width="470"
@@ -25,7 +25,7 @@ const Hero = () => (
           alt="construction"
           className="lg:self-end self-start"
         />
-        <div className="mt-8 lg:ml-7 lg:mt-0 flex flex-col lg:mt-10 sm:px-2 flex-1 px-4 lg:px-0 justify-between h-auto">
+        <div className="mt-8 lg:ml-7 flex flex-col lg:mt-10 sm:px-2 flex-1 px-4 lg:px-0 justify-between h-auto">
           <span />
           <div className="text-2xl lg:text-3xl text-primary text-left font-medium font-gt-america-ext max-w-content lg:pl-12 leading-[44px]">
             Launch liquidity for shared security protocols. <br /> Native
@@ -42,7 +42,7 @@ const Hero = () => (
 
 const WhatIsYieldi = () => {
   return (
-    <section className="lg:sticky lg:top-0 relative w-full bg-dark rounded-3xl lg:rounded-[60px] relative py-8 lg:py-16 px-12 lg:px-24 text-accent-dark flex-col lg:flex-row">
+    <section className="lg:sticky lg:top-0 relative w-full bg-dark rounded-3xl lg:rounded-[60px] py-8 lg:py-16 px-12 lg:px-24 text-accent-dark flex-col lg:flex-row">
       <span className="flex text-accent-dark text-xl font-medium uppercase">
         What is Yieldi?
       </span>
