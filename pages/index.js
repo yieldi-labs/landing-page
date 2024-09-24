@@ -25,12 +25,21 @@ const Hero = () => (
           alt="construction"
           className="lg:self-end self-start"
         />
-        <div className="mt-8 lg:ml-7 flex flex-col lg:mt-10 sm:px-2 flex-1 px-4 lg:px-0 justify-between h-auto">
+        <div className="mt-8 lg:ml-7 flex flex-col lg:mt-10 sm:px-2 flex-1 px-4 lg:px-0 justify-between h-auto lg:pl-12">
           <span />
-          <div className="text-2xl lg:text-3xl text-primary text-left font-medium font-gt-america-ext max-w-content lg:pl-12 leading-[44px]">
+          <div className="text-2xl lg:text-3xl text-primary text-left font-medium font-gt-america-ext max-w-content leading-[44px]">
             Launch liquidity for shared security protocols. <br /> Native
             yield-streaming for the lowest cost of security.
           </div>
+          <NavLink
+            href="https://yieldi-app.vercel.app/"
+            target="_blank"
+            className="duration-150 hover:text-secondary hover:bg-[#332b29c9] active:bg-gray-900 h-14 w-[241px] px-5 py-2.5 rounded-[58px] 
+                                border  border-primary-light justify-center items-center gap-2.5 inline-flex bg-primary text-secondary
+                                text-base font-medium md:inline uppercase"
+          >
+            restake now
+          </NavLink>
           <div className="mt-10 flex flex-col">
             <SocialLinks />
           </div>
@@ -175,6 +184,15 @@ const ToolKit = () => {
               The Yield Venue for Shared{" "}
               <span className="relative z-[0] bg-highlight">Security</span>
             </h1>
+            <NavLink
+              href="https://yieldi-app.vercel.app/"
+              target="_blank"
+              className="duration-150 hover:text-secondary hover:bg-[#332b29c9] active:bg-gray-900 h-32 w-full px-5 py-2.5 rounded-full 
+                                  border  border-primary-light justify-center items-center gap-2.5 inline-flex bg-transparent text-primary
+                                  text-xl font-medium md:inline uppercase"
+            >
+              restake now
+            </NavLink>
             <div className="flex justify-center gap-4">
               <SocialLink
                 href="https://x.com/yieldi_xyz"

@@ -1,8 +1,9 @@
+import Brand from "@components/ui/Brand";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Brand from "@components/ui/Brand";
 import { twMerge } from "tailwind-merge";
+import NavLink from "../NavLink";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -46,14 +47,13 @@ const Navbar = () => {
   );
 
   const headerClasses = twMerge(
-    "custom-screen items-center mx-auto p-4 lg:p-0 flex justify-between w-full",
-    scrolled && "bg-secondary lg:bg-transparent",
+    "custom-screen items-center mx-auto p-4 lg:p-0 flex justify-between lg:w-auto w-full lg:bg-transparent bg-secondary",
   );
 
   return (
     <header className="fixed top-0 w-full z-40">
       <nav className={navClasses}>
-        <div className="lg:custom-screen lg:mx-auto gap-2 lg:py-5 lg:flex flex items-end lg:items-center flex-col lg:flex-row w-full">
+        <div className="lg:custom-screen lg:mx-auto lg:gap-2 lg:py-5 lg:flex flex items-end lg:items-center flex-col lg:flex-row w-full">
           <div className={headerClasses}>
             <Brand />
             <button
@@ -95,7 +95,7 @@ const Navbar = () => {
           <div
             className={`flex-1 pb-3 lg:pb-0 lg:flex ${isMenuOpen ? "" : "hidden"} justify-between align-middle`}
           >
-            <div className="flex flex-1 justify-end">
+            <div className="flex flex-1 justify-between">
               <ul
                 className="text-dark lg:flex lg:space-x-8 lg:space-y-0 lg:font-medium py-2 lg:py-0
                                 border border-dark rounded-lg lg:bg-transparent bg-accent lg:border-none lg:text-gray-700"
@@ -111,7 +111,30 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                {isMenuOpen && (
+                  <li>
+                    <NavLink
+                      href="https://yieldi-app.vercel.app/"
+                      target="_blank"
+                      className="duration-150 hover:text-secondary hover:bg-primary/80 h-10 px-5 py-2.5 lg:rounded-nav lg:border lg:border-primary-light 
+                                            justify-center items-center gap-2.5 inline-flex text-center font-medium text-nav leading-normal uppercase text-primary"
+                    >
+                      launch app
+                    </NavLink>
+                  </li>
+                )}
               </ul>
+              <div className="flex">
+                <NavLink
+                  href="https://yieldi-app.vercel.app/"
+                  target="_blank"
+                  className="duration-150 hover:text-secondary hover:bg-[#332b29c9] active:bg-gray-900 h-10 w-[159px] px-5 py-2.5 rounded-[40px] 
+                                      border  border-primary-light justify-center items-center gap-2.5 lg:inline-flex bg-primary text-secondary
+                                      text-sm font-medium md:inline uppercase hidden"
+                >
+                  launch app
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>

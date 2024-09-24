@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Brand = () => (
-  <Link href="/" className="flex justify-center align-middle mr-5">
+  <Link href="/" className="flex justify-center align-middle mr-14">
     <Image
       src="/logo.svg"
       alt="Yieldi Logo"
